@@ -1,9 +1,6 @@
-import requests
-import json
-from typing import TYPE_CHECKING, Callable, Dict, List, Optional, Union
 from datetime import datetime
 
-from yoomoney import (
+from yoomoney.api import (
     Account,
     History,
     OperationDetails,
@@ -21,8 +18,6 @@ class Client:
 
         if token is not None:
             self.token = token
-
-
 
     def account_info(self):
         method = "account-info"

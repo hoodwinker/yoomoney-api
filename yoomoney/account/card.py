@@ -1,6 +1,4 @@
 
-
-
 class Card:
     def __init__(self,
                  pan_fragment: str = None,
@@ -8,4 +6,3 @@ class Card:
                  ):
         self.pan_fragment = pan_fragment
         self.type = type
-

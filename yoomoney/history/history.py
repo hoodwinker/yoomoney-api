@@ -1,9 +1,7 @@
 from datetime import datetime
 from typing import Optional
-import requests
-import json
 
-from yoomoney.operation.operation import Operation
+import requests
 
 from yoomoney.exceptions import (
     IllegalParamType,
@@ -13,7 +11,8 @@ from yoomoney.exceptions import (
     IllegalParamFromDate,
     IllegalParamTillDate,
     TechnicalError
-    )
+)
+from yoomoney.operation.operation import Operation
 
 
 class History:

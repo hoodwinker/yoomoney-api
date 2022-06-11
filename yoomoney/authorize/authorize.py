@@ -6,15 +6,16 @@ from yoomoney.exceptions import (
     UnauthorizedClient,
     InvalidGrant,
     EmptyToken
-    )
+)
+
 
 class Authorize:
     def __init__(
-            self,
-            client_id: str,
-            redirect_uri: str,
-            scope: List[str]
-                  ):
+        self,
+        client_id: str,
+        redirect_uri: str,
+        scope: List[str]
+    ):
 
         url = "https://yoomoney.ru/oauth/authorize?client_id={client_id}&response_type=code" \
               "&redirect_uri={redirect_uri}&scope={scope}".format(client_id=client_id,
@@ -34,7 +35,7 @@ class Authorize:
 
         code = str(input("Enter redirected url (https://yourredirect_uri?code=XXXXXXXXXXXXX) or just code: "))
         try:
-            code = code[code.index("code=") + 5:].replace(" ","")
+            code = code[code.index("code=") + 5:].replace(" ", "")
         except:
             pass
 

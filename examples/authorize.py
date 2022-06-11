@@ -1,4 +1,4 @@
-from yoomoney import Authorize
+from yoomoney.api import Authorize
 
 Authorize(
     client_id="YOUR_CLIENT_ID",

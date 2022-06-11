@@ -1,9 +1,10 @@
 import requests
 
+
 class Quickpay:
     def __init__(self,
                  receiver: str,
-                 quickpay_form : str,
+                 quickpay_form: str,
                  targets: str,
                  paymentType: str,
                  sum: float,
@@ -66,8 +67,8 @@ class Quickpay:
             payload["need_address"] = self.need_address
 
         for value in payload:
-            self.base_url+=str(value).replace("_","-") + "=" + str(payload[value])
-            self.base_url+="&"
+            self.base_url += str(value).replace("_", "-") + "=" + str(payload[value])
+            self.base_url += "&"
 
         self.base_url = self.base_url[:-1].replace(" ", "%20")
 

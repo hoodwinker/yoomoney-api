@@ -1,15 +1,15 @@
 from datetime import datetime
-from typing import Optional, List
+from typing import List
+
 import requests
 
 from yoomoney.exceptions import (
     IllegalParamOperationId,
     TechnicalError
-    )
-
-from yoomoney.operation_details.digital_product import DigitalProduct
+)
 from yoomoney.operation_details.digital_bonus import DigitalBonus
 from yoomoney.operation_details.digital_good import DigitalGood
+from yoomoney.operation_details.digital_product import DigitalProduct
 
 
 class OperationDetails:

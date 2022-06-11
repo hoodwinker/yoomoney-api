@@ -1,6 +1,7 @@
 from datetime import datetime as dt
 from typing import Optional
 
+
 class Operation:
     def __init__(self,
                  operation_id: str = None,

@@ -1,10 +1,9 @@
 import requests
-import json
-from typing import TYPE_CHECKING, Optional, List
 
 from yoomoney.account.balance_details import BalanceDetails
 from yoomoney.account.card import Card
 from yoomoney.exceptions import InvalidToken
+
 
 class Account:
 

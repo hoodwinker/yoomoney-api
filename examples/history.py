@@ -1,4 +1,4 @@
-from yoomoney import Client
+from yoomoney.api import Client
 
 token = "YOUR_TOKEN"
 

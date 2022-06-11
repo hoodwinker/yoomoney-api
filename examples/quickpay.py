@@ -1,4 +1,4 @@
-from yoomoney import Quickpay
+from yoomoney.api import Quickpay
 
 quickpay = Quickpay(
             receiver="410019014512803",
